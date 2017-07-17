@@ -4,6 +4,11 @@
 # the result of multiplying all
 # those numbers together
 
+def product_list(list_of_numbers):
+    product = 1
+    for i in list_of_numbers:
+        product = product*i
+    return product
 
 print product_list([9])
 #>>> 9
