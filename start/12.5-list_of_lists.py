@@ -24,7 +24,12 @@ usa_univs=[ ['California Institute of Technology',2175,37704],
             ['Stanford',19535,40569],
             ['Yale',11701,40500] ]
 
-
+def total_enrollment(info_list):
+    enrollment,tuition = 0,0
+    for i in info_list:
+        enrollment +=i[1]
+        tuition += i[2]*i[1]
+    return enrollment,tuition
 
 print total_enrollment(udacious_univs)
 #>>> (90000,0)
